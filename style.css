@@ -19,12 +19,12 @@ body {
 header {
     background: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
 }
 
 header h1 {
-    margin: 0;
+    margin-bottom: 10px;
 }
 
 nav ul {
@@ -33,26 +33,37 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 15px;
+    display: inline-block;
+    margin-right: 20px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .section {
-    padding: 20px 0;
+    padding: 40px 0;
+    border-bottom: 1px solid #ccc;
 }
 
 h2 {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    color: #333;
 }
 
 ul {
     list-style: disc;
-    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.experience, .projects, .education {
+    margin-bottom: 20px;
+}
+
+.experience h3, .projects li, .education li {
+    margin-bottom: 10px;
 }
 
 form {
@@ -78,4 +89,13 @@ button {
     color: #fff;
     border: none;
     cursor: pointer;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
