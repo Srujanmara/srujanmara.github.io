@@ -1,80 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Srujan Mara | Data Engineer</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      color: #333;
-    }
-    header {
-      background: #f4f4f4;
-      padding: 20px;
-      text-align: center;
-    }
-    nav {
-      background: #333;
-      color: #fff;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      color: #fff;
-      margin: 0 10px;
-      text-decoration: none;
-    }
-    section {
-      padding: 20px;
-    }
-    h2 {
-      color: #333;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Srujan Mara - Data Engineer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <div class="container">
+            <h1>Srujan Mara</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <header>
-    <h1>Hi, I'm Srujan Mara</h1>
-    <p>Data Engineer | Azure Specialist | 7 Years Experience</p>
-    <p>Welcome to my portfolio! I specialize in designing, building, and optimizing data pipelines to turn raw data into valuable insights.</p>
-  </header>
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a dynamic and motivated IT professional with 7 years of experience as a Data Engineer. I specialize in Cloud Data Engineering, Data Warehousing, Big Data Analytics, and Visualization. I have extensive expertise in Azure, Databricks, and various big data technologies.</p>
+        </div>
+    </section>
 
-  <nav>
-    <a href="#about">About Me</a> |
-    <a href="#projects">Projects</a> |
-    <a href="#skills">Skills</a> |
-    <a href="#contact">Contact</a>
-  </nav>
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><strong>Cloud Technologies:</strong> Azure Databricks, Azure Data Factory, Azure SQL, Azure Synapse Analytics</li>
+                <li><strong>Programming Languages:</strong> Python, SQL, PySpark, R, Scala</li>
+                <li><strong>Big Data Tech:</strong> Spark, Hive, Kafka, Flume</li>
+                <li><strong>Databases:</strong> MySQL, Snowflake, MS SQL Server</li>
+            </ul>
+        </div>
+    </section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am a Data Engineer with 7 years of experience in designing and building data pipelines using Azure Synapse, Data Factory, and Databricks with PySpark and Scala.</p>
-  </section>
+    <section id="experience" class="section">
+        <div class="container">
+            <h2>Professional Experience</h2>
+            <div class="experience">
+                <h3>Data Engineer - Blue Cross Blue Shield of Kansas City (May 2023 - Present)</h3>
+                <ul>
+                    <li>Architect and implement large-scale EDW & BI solutions on Azure.</li>
+                    <li>Led the migration of 8TB of data from Teradata to Azure SQL.</li>
+                    <li>Improved data flow pipelines using Azure Data Factory and Databricks.</li>
+                </ul>
+            </div>
+            <div class="experience">
+                <h3>Data Engineer - Zomato Ltd (May 2019 - Jul 2021)</h3>
+                <ul>
+                    <li>Developed ETL pipelines using Azure Data Factory and Databricks.</li>
+                    <li>Created complex data transformations using PySpark and Spark SQL.</li>
+                </ul>
+            </div>
+            <!-- Additional experience can be added similarly -->
+        </div>
+    </section>
 
-  <section id="projects">
-    <h2>Featured Projects</h2>
-    <h3>Healthcare Data Pipeline</h3>
-    <p>...Details about the project...</p>
-  </section>
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <ul>
+                <li>Developed a Tableau dashboard analyzing inflation rates from multiple data sources.</li>
+                <li>Built a sales performance monitoring dashboard using Tableau and Python.</li>
+            </ul>
+        </div>
+    </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Data Engineering</li>
-      <li>Cloud Platforms</li>
-      <li>Programming</li>
-    </ul>
-  </section>
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:srujanmara@example.com">srujanmara@example.com</a></p>
-  </section>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
 </body>
 </html>
